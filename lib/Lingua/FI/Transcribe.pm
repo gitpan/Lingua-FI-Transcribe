@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 use Lingua::FI::Hyphenate qw(tavuta);
 
@@ -54,7 +54,8 @@ sub English {
 	     'ö'     =>      'ur',
 	     'öö'    =>      'urr',
 	    );
-    my $T = join("|", keys %T);
+
+    my $T = join("|", sort { length($b) <=> length($a) || $a cmp $b } keys %T);
 
     my $English = sub {
 	my @tavut = tavuta($_[0]);

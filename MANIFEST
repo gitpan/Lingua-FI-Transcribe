@@ -1,0 +1,5 @@
+lib/Lingua/FI/Transcribe.pm
+MANIFEST
+README
+t/english.t
+

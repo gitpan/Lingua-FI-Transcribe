@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 use Lingua::FI::Hyphenate qw(tavuta);
 
@@ -88,6 +88,13 @@ Lingua::FI::Transcribe - Finnish transcription
     print Lingua::FI::Transcribe->English("olut"), "\n";
 
     print Lingua::FI::Transcribe->English("jarkko hietaniemi"), "\n";
+
+    # The results being
+
+    sow-nah
+    see-soo
+    aw-loot
+    yahrrk-kaw hheeeh-tah-neeeh-mee
 
 =head1 DESCRIPTION
 
